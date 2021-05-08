@@ -9,19 +9,29 @@ const Header = () => (
     <div className="container">
       <div
         style={{
-          height: `27px`,
-          width: `27px`,
+          height: `38px`,
+          width: `38px`,
           display: `inline-block`,
         }}
       >
         <Link to="/">
-          <img src={CSSALogo} alt="A dog smiling in a party hat" />
+          <img src={CSSALogo} alt="CSSA logo" className="cssalogo"/>
         </Link>
       </div>
       <div className="right-subcontainer">
         <div className="tab-container">
           <Link to="/Event-Page/" className="linkTab">
-            Event
+            Events活动
+          </Link>
+        </div>
+        <div className="tab-container">
+          <Link to="/Membership-Page/" className="linkTab">
+            Membership会员卡
+          </Link>
+        </div>
+        <div className="tab-container">
+          <Link to="/Sponsor-Page/" className="linkTab">
+            Sponsors赞助商
           </Link>
         </div>
         <div className="tab-container">
@@ -29,19 +39,9 @@ const Header = () => (
             CSSA Family
           </Link>
         </div>
-        <div className="tab-container">
-          <Link to="/Sponsor-Page/" className="linkTab">
-            Sponsor
-          </Link>
-        </div>
-        <div className="tab-container">
-          <Link to="/Membership-Page/" className="linkTab">
-            Membership
-          </Link>
-        </div>
-        <Link to="/" className="loginTab">
+        {/* <Link to="/" className="loginTab">
           Staff Login
-        </Link>
+        </Link> */}
       </div>
     </div>
   </header>

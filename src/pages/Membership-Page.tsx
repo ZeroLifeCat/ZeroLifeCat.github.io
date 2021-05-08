@@ -65,20 +65,20 @@ class MembershipPage extends React.Component {
           <CollapsableTablingTable term="Winter" />
         </div>
         <div>
-          <h1>Card Design</h1>
-          <div className="slideshow-container">
-            <div className="mySlides fade" style={{}}>
-              <div className="numbertext">1 / 2</div>
-              <Image name="MembershipCardWatermelon" />
-            </div>
-            <div className="mySlides fade" style={{}}>
-              <div className="numbertext">2 / 2</div>
-              <Image name="MembershipCardPineapple" />
-            </div>
-            <div style={{ textAlign: 'center' }}>
-              <span className="dot" onClick={(e) => this.currentSlide(1)}></span>
-              <span className="dot" onClick={(e) => this.currentSlide(2)}></span>
-            </div>
+        <h1>Card Design</h1>
+        <div className="slideshow-container">
+          <div className="mySlides fade" style={{}}>
+            <div className="numbertext">1 / 2</div>
+            <Image name="MembershipCardWatermelon" />
+          </div>
+          <div className="mySlides fade" style={{}}>
+            <div className="numbertext">2 / 2</div>
+            <Image name="MembershipCardPineapple" />
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <span className="dot" onClick={(e) => this.currentSlide(1)}></span>
+            <span className="dot" onClick={(e) => this.currentSlide(2)}></span>
+          </div>
           </div>
         </div>
         <div className="series-name-container">
